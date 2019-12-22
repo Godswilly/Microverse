@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Span Registration Page</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+
+<div class="form-style-10">
+<h1>Microverse Admission Survey!<span>Sign up for the 6 - 8 months software training program</span></h1>
+<form>
+    <div class="section"><span>1</span>Name &amp; Address</div>
+    <div class="inner-wrap">
+        <label>Your Full Name<sup>**</sup> <input type="text" name="name" />
+    </label>
+        <label>Address <sup>**</sup> <textarea name="address"></textarea>
+    </label>
+    </div>
+    <div class="section"><span>2</span>Email &amp; Phone Number</div>
+    <div class="inner-wrap">
+        <label>Email Address <sup>**</sup> <input type="email" name="email"/>
+    </label>
+        <label>Phone Number  <sup>**</sup><input type="text" name="phone"/>
+    </label>
+    </div>
+
+    <div class="section"><span>3</span>Gender</div>
+    <div class="inner-wrap">
+        <label>Gender <sup>**</sup>
+                <select id = "Gender" name="gender">
+                        <option value="0">Select gender</option>
+                        <option value = "Male">Male</option>
+                        <option value = "Female">Female</option>                        
+                      </select>
+                      <span class="error"><?php echo $genderErr; ?></span>
+        </label>
+        
+    </div>
+
+    <div class="section"><span>4</span>Experience</div>
+    <div class="inner-wrap">
+        <label>Years of Experience <input type="number" name="yr" min="0"/> </label>
+        <label>Movies Featured: <input type="text" name="movies" placeholder="" /></label>
+        
+    
+    <div class="button-section">
+     <span class="privacy-policy">
+     <input type="checkbox" name="promo_mail">
+     </span>
+     <input type="submit" name="submit" value="Register" />
+    </div>
+</form
+</body>
+</html>
